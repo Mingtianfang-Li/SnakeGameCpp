@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "GameOverScreen.h"
 #include "GameStatus.h"
 #include "raylib.h"
 #include "ScoreBoard.h"
@@ -12,8 +13,9 @@ int main() {
     int height = 750;
     InitWindow(width, height, title);
 
-    // Create StartScreen and ScoreBoard objects outside the loop
+    // Create StartScreens and ScoreBoard objects
     StartScreen start_screen = {width, height};
+    GameOverScreen game_over_screen = {width, height};
     ScoreBoard score_board = {width, height};
     GameStatus game_status = GameStatus::START_SCREEN;
 
@@ -22,11 +24,10 @@ int main() {
         // Begin drawing
         BeginDrawing();
 
-        start_screen.Draw(); // Draw start screen
-        score_board.Draw(); // Draw score board
-
         //check game status
         if(game_status == GameStatus::START_SCREEN) {
+            start_screen.Draw(); // Draw start screen
+            score_board.Draw(); // Draw score board
             // Check for mouse clicks
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                 Vector2 mousePoint = GetMousePosition();
@@ -35,7 +36,8 @@ int main() {
         } else if (game_status == GameStatus::PLAYING) {
 
         } else if (game_status == GameStatus::GAME_OVER) {
-
+            game_over_screen.Draw();
+            score_board.Draw(); // Draw score board
         }
 
         EndDrawing();

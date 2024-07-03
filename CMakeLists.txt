@@ -34,13 +34,15 @@ endif()
 add_executable(${PROJECT_NAME} src/main.cpp
         src/StartScreen.cpp
         include/StartScreen.h
-        ClickButton.cpp
+        src/ClickButton.cpp
         include/ClickButton.h
         src/ScoreBoard.cpp
         include/ScoreBoard.h
         src/Game.cpp
         include/Game.h
         include/GameStatus.h
+        include/GameOverScreen.h
+        src/GameOverScreen.cpp
 )
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
