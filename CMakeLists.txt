@@ -4,6 +4,12 @@ project(SnakeGame)
 # Generate compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# Include directories
+include_directories(include)
+
+# Collect all source files
+file(GLOB SOURCES "src/*.cpp" "src/UI/*.cpp")
+
 # Dependencies
 set(RAYLIB_VERSION 4.5.0)
 find_package(raylib ${RAYLIB_VERSION} QUIET) # QUIET or REQUIRED
@@ -25,16 +31,16 @@ endif()
 
 # Our Project
 
-add_executable(${PROJECT_NAME} main.cpp
-        StartScreen.cpp
-        StartScreen.h
+add_executable(${PROJECT_NAME} src/main.cpp
+        src/StartScreen.cpp
+        include/StartScreen.h
         ClickButton.cpp
-        ClickButton.h
-        ScoreBoard.cpp
-        ScoreBoard.h
-        Game.cpp
-        Game.h
-        GameStatus.h
+        include/ClickButton.h
+        src/ScoreBoard.cpp
+        include/ScoreBoard.h
+        src/Game.cpp
+        include/Game.h
+        include/GameStatus.h
 )
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
