@@ -32,8 +32,8 @@ endif()
 # Our Project
 
 add_executable(${PROJECT_NAME} src/main.cpp
-        src/StartScreen.cpp
-        include/StartScreen.h
+        src/MenuScreen.cpp
+        include/MenuScreen.h
         src/ClickButton.cpp
         include/ClickButton.h
         src/ScoreBoard.cpp
@@ -41,8 +41,6 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/Game.cpp
         include/Game.h
         include/GameStatus.h
-        include/GameOverScreen.h
-        src/GameOverScreen.cpp
 )
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)

@@ -2,22 +2,27 @@
 // Created by 74559 on 7/3/2024.
 //
 
-#ifndef GAMEOVERSCREEN_H
-#define GAMEOVERSCREEN_H
+#ifndef MenuSCREEN_H
+#define MenuSCREEN_H
 
-class GameOverScreen {
+
+
+class MenuScreen {
 public:
     int width, height;
     int buttonX, buttonY, exitY;
     float buttonWidth, buttonHeight;
+    const char* firstButton;
+    const char* secondButton;
 
-    GameOverScreen(int width, int height);
+
+    MenuScreen(int width, int height, const char* firstButton, const char* secondButton);
 
     void Draw();
 
-    int GetReStartButtonX();
+    int GetStartButtonX();
 
-    int GetReStartButtonY();
+    int GetStartButtonY();
 
     int GetExitButtonX();
 
@@ -28,4 +33,6 @@ public:
     float GetButtonHeight();
 };
 
-#endif //GAMEOVERSCREEN_H
+
+
+#endif
