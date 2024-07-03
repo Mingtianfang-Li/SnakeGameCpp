@@ -1,0 +1,23 @@
+# ninja log v6
+5	98	7416028370157478	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	acaffb1818f757b3
+5	98	7416028370157478	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	acaffb1818f757b3
+5	5304	7416032141578368	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	de90c60a701f9810
+5	5304	7416032141578368	raylib-populate-prefix/src/4.5.0.tar.gz	de90c60a701f9810
+5	5304	7416032141578368	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	de90c60a701f9810
+5	5304	7416032141578368	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/4.5.0.tar.gz	de90c60a701f9810
+5306	5388	7416032142408351	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	de2ee1fd69e478fb
+5306	5388	7416032142408351	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	de2ee1fd69e478fb
+5388	5467	7416032143188372	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	12f5e660f3bfec4c
+5388	5467	7416032143188372	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	12f5e660f3bfec4c
+5467	5539	7416032143908364	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	833a172a90b68faf
+5467	5539	7416032143908364	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	833a172a90b68faf
+5539	5612	7416032144668361	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	4503d07d2b6dc924
+5539	5612	7416032144668361	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	4503d07d2b6dc924
+5612	5685	7416032145378356	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	4e78b16aff8d301c
+5612	5685	7416032145378356	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	4e78b16aff8d301c
+5685	5759	7416032146128358	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	a9df8ae86a5d97ca
+5685	5759	7416032146128358	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	a9df8ae86a5d97ca
+5759	5861	7416032147148339	CMakeFiles/raylib-populate-complete	b6ce38402fc27b06
+5759	5861	7416032147148339	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	b6ce38402fc27b06
+5759	5861	7416032147148339	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	b6ce38402fc27b06
+5759	5861	7416032147148339	C:/Users/luoke/Desktop/NEU/CLionProject/SnakeGame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	b6ce38402fc27b06
