@@ -1,0 +1,35 @@
+# Ignore build directories
+cmake-build-debug/
+
+# Ignore CMake cache files
+CMakeCache.txt
+CMakeFiles/
+
+# Ignore CLion-specific files
+.idea/
+*.iml
+
+# Ignore build artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore user-specific settings
+*.user
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Ignore generated files
+*.generated.*
+
