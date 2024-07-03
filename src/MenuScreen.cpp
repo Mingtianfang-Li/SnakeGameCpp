@@ -28,26 +28,26 @@ void MenuScreen::Draw() {
     exitButtion.Draw();
 }
 
-int MenuScreen::GetStartButtonX() {
+int MenuScreen::getStartButtonX() {
     return buttonX;
 }
 
-int MenuScreen::GetStartButtonY() {
+int MenuScreen::getStartButtonY() {
     return buttonY;
 }
 
-int MenuScreen::GetExitButtonX() {
+int MenuScreen::getExitButtonX() {
     return buttonX;
 }
 
-int MenuScreen::GetExitButtonY() {
+int MenuScreen::getExitButtonY() {
     return exitY;
 }
 
-float MenuScreen::GetButtonWidth() {
+float MenuScreen::getButtonWidth() {
     return buttonWidth;
 }
 
-float MenuScreen::GetButtonHeight() {
+float MenuScreen::getButtonHeight() {
     return buttonHeight;
 }

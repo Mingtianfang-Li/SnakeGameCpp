@@ -20,17 +20,17 @@ public:
 
     void Draw();
 
-    int GetStartButtonX();
+    int getStartButtonX();
 
-    int GetStartButtonY();
+    int getStartButtonY();
 
-    int GetExitButtonX();
+    int getExitButtonX();
 
-    int GetExitButtonY();
+    int getExitButtonY();
 
-    float GetButtonWidth();
+    float getButtonWidth();
 
-    float GetButtonHeight();
+    float getButtonHeight();
 };
 
 
