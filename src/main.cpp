@@ -4,6 +4,7 @@
 #include "raylib.h"
 #include "ScoreBoard.h"
 #include "MenuScreen.h"
+#include "Game.h"
 
 bool checkBoundred(float mou_x, float mou_y, MenuScreen screen, const std::string& title);
 std::string start = "Start";
@@ -21,6 +22,7 @@ int main() {
     MenuScreen start_screen = {width, height, start.c_str() , exitText.c_str()};
     MenuScreen game_over_screen = {width, height, restart.c_str(), exitText.c_str()};
     ScoreBoard score_board = {width, height};
+    Game game = {width, height};
     GameStatus game_status = GameStatus::START_SCREEN;
 
 
@@ -43,7 +45,7 @@ int main() {
                 }
             }
         } else if (game_status == GameStatus::PLAYING) {
-
+            game.Play();
 
         } else if (game_status == GameStatus::GAME_OVER) {
             game_over_screen.Draw();

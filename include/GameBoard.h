@@ -8,7 +8,12 @@
 
 
 class GameBoard {
+public:
+    int width, height;
 
+    GameBoard(int width, int height);
+
+    void Draw();
 };
 
 
