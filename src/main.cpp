@@ -36,7 +36,7 @@ int main() {
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                 Vector2 mousePoint = GetMousePosition();
                 if (checkBoundred(mousePoint.x, mousePoint.y, start_screen, start)) {
-                    game_status = GameStatus::GAME_OVER;
+                    game_status = GameStatus::PLAYING;
                 } else if (checkBoundred(mousePoint.x, mousePoint.y, start_screen, exitText)) {
                     CloseWindow();
                     return 0;
@@ -44,13 +44,14 @@ int main() {
             }
         } else if (game_status == GameStatus::PLAYING) {
 
+
         } else if (game_status == GameStatus::GAME_OVER) {
             game_over_screen.Draw();
             score_board.Draw(); // Draw score board
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
                 Vector2 mousePoint = GetMousePosition();
                 if (checkBoundred(mousePoint.x, mousePoint.y, start_screen, start)) {
-                    game_status = GameStatus::START_SCREEN;
+                    game_status = GameStatus::PLAYING;
                 } else if (checkBoundred(mousePoint.x, mousePoint.y, start_screen, exitText)) {
                     CloseWindow();
                     return 0;

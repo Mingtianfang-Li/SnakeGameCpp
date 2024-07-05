@@ -8,7 +8,19 @@
 
 
 class Game {
+public:
+    int width, height;
+    int score;
 
+    Game(int width, int height);
+
+    bool collesion();
+
+    void generateFood();
+
+    void DrawgameOver();
+
+    void Play();
 };
 
 

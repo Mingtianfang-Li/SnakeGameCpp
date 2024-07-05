@@ -41,6 +41,10 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/Game.cpp
         include/Game.h
         include/GameStatus.h
+        src/GameBoard.cpp
+        include/GameBoard.h
+        src/Snake.cpp
+        include/Snake.h
 )
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
