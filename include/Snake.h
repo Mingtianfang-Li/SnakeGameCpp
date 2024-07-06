@@ -19,21 +19,21 @@ private:
 public:
     int start_x;
     int start_y;
-    Vector2 currentHeadPostion;
+    Vector2 currentHeadPostion{};
 
     Snake(int start_x, int start_y);
 
     void Draw();
 
-    void Move();
-
-    void UpdateDirection();
-
     void Grow();
 
-    bool CollectionBody();
+    bool CollsionBody();
 
-    void UpdateSnake();
+    void UpdateSnake(Vector2 newHead);
+
+    void EraseSegment(Vector2 segement);
+
+    Vector2 GetCurrentHeadPostion();
 
 };
 

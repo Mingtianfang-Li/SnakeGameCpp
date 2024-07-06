@@ -4,6 +4,8 @@
 
 #include "Game.h"
 
+#include <iostream>
+
 #include "GameBoard.h"
 #include "Snake.h"
 
@@ -18,19 +20,21 @@ void Game::Play() {
     // init snake; create another class for snake
     int snakeStartX = width / 2 - 10;
     int snakeStartY = height / 2 - 10;
-    Snake snake = {snakeStartX, snakeStartY};
+    int offset = 10;
+
+    Snake snake = {snakeStartX, snakeStartY,};
     snake.Draw();
     // while not collesion still in game
-        // init food
-        // snake move
-        // if eat, snake longer
-            // random new food
+    // snake.Move();
+
     // game over
 }
 
 bool Game::collesion() {
+
     // check collesion on wall
     // check collesion on snake
+    return false;
 }
 
 void Game::generateFood() {
