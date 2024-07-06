@@ -24,6 +24,10 @@ int main() {
     ScoreBoard score_board = {width, height};
     Game game = {width, height};
     GameStatus game_status = GameStatus::START_SCREEN;
+    int direction = 0;
+
+    float moveInterval = 0.5f; // Move interval in seconds
+    float lastMoveTime = GetTime(); // Time of the last move
 
 
     while (!WindowShouldClose()) {
@@ -46,6 +50,22 @@ int main() {
             }
         } else if (game_status == GameStatus::PLAYING) {
             game.Play();
+            if (IsKeyPressed(KEY_UP) && direction != 1) {
+                direction = 0;
+            } else if (IsKeyPressed(KEY_DOWN) && direction != 0) {
+                direction = 1;
+            } else if (IsKeyPressed(KEY_LEFT) && direction != 3) {
+                direction = 2;
+            } else if (IsKeyPressed(KEY_RIGHT) && direction != 2) {
+                direction = 3;
+            }
+            float currentTime = GetTime();
+            if (currentTime - lastMoveTime > moveInterval) {
+                // Move the snake based on the direction
+                std::cout << direction << "\n";
+                // game.Play(); // Update the game state (move the snake)
+                lastMoveTime = currentTime; // Update the last move time
+            }
 
         } else if (game_status == GameStatus::GAME_OVER) {
             game_over_screen.Draw();

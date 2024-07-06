@@ -14,7 +14,7 @@ Snake::Snake(int start_x, int start_y) : start_x(start_x), start_y(start_y){
     currentHeadPostion = {static_cast<float>(start_x), static_cast<float>(start_y)};
     body.push_back(currentHeadPostion);
     // width and height for 10ptx for each body fragment
-    bodyWidth = 30;
+    bodyWidth = 20;
     direction = 0;
 }
 
@@ -55,15 +55,15 @@ void Snake::Draw() {
 //
 // void Snake::UpdateDirection() {
 //     // Based on user Input to determine the move
-//     if (IsKeyPressed(KEY_UP) && direction != 1) {
-//         direction = 0;
-//     } else if (IsKeyPressed(KEY_DOWN) && direction != 0) {
-//         direction = 1;
-//     } else if (IsKeyPressed(KEY_LEFT) && direction != 3) {
-//         direction = 2;
-//     } else if (IsKeyPressed(KEY_RIGHT) && direction != 2) {
-//         direction = 3;
-//     }
+     // if (IsKeyPressed(KEY_UP) && direction != 1) {
+     //     direction = 0;
+     // } else if (IsKeyPressed(KEY_DOWN) && direction != 0) {
+     //     direction = 1;
+     // } else if (IsKeyPressed(KEY_LEFT) && direction != 3) {
+     //     direction = 2;
+     // } else if (IsKeyPressed(KEY_RIGHT) && direction != 2) {
+     //     direction = 3;
+     // }
 // }
 
 void Snake::Grow() {
